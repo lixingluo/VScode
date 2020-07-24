@@ -46,3 +46,29 @@
     ]
 }
 ```
+```
+// launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // this name is same as RUN 
+            "name": "g++-10 - Build and debug active file",
+            // this name is same as tasks.label in tasks.json
+            "preLaunchTask": "C/C++: g++-10 build active file",
+            "type": "cppdbg",
+            "request": "launch",
+            // executable file, current folder/current file name without extension
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            // choose true will stop the program after console opened, not execute program directly
+            "stopAtEntry": false,
+            // current working path: the working space folder of current file 
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            // if change to false, then will call terminal
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }]
+}
+```
