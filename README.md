@@ -92,6 +92,7 @@
 ####  _假设你满足以下的条件_
 1. 一个文件/home/your-username/your-project/folder/file.ext在你的编辑器中打开
 2. 一个目录/home/your-username/your-project作为你的根目录
+####  _预定义变量则是_
 - ${workspaceFolder} - /home/your-username/your-project
 - ${workspaceFolderBasename} - your-project
 - ${file} - /home/your-username/your-project/folder/file.ext
